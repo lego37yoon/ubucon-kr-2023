@@ -1,9 +1,13 @@
 
-import { Strip, Row, Col } from "@canonical/react-components";
+import { Button, Strip, Row, Col } from "@canonical/react-components";
+import { useTranslations } from "../i18n/utils";
 import { useState, useEffect } from "react";
 
 export default function DiscourseNoticeBanner(props) {
     const [ topicList, setTopicList ] = useState([]);
+    const [ moreTopic, setMoreTopic ] = useState([]);
+    const t = useTranslations(props.language);
+    
     useEffect(() => {
         fetch(`${props.baseUrl}${props.jsonFeedEndpoint}`)
             .then(res => res.json()).then(data => {
@@ -19,6 +23,7 @@ export default function DiscourseNoticeBanner(props) {
                         };
                     });
                 setTopicList(filteredTopics);
+                setMoreTopic(`${props.baseUrl}${data["topic_list"]["more_topics_url"]}`);
             })
     }, [])
     return (
@@ -32,6 +37,18 @@ export default function DiscourseNoticeBanner(props) {
                         <b>{item.date}</b>
                     </Col>
                 ))}
+            </Row>
+            <Row>
+                <Col size={10}></Col>
+                <Col size={2}>
+                    <Button
+                        appearance=""
+                        element={"a"}
+                        href={moreTopic}
+                    >
+                        {t("noticeBanner.seeMore")}
+                    </Button>
+                </Col>
             </Row>
         </Strip>
     )
