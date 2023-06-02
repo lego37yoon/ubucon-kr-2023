@@ -46,7 +46,7 @@ export default function DiscourseNoticeBanner(props) {
                         element={"a"}
                         href={moreTopic}
                     >
-                        {t("noticeBanner.seeMore")}
+                        {t("noticeBanner.moreArticle")}
                     </Button>
                 </Col>
             </Row>

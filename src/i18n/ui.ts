@@ -18,7 +18,11 @@ export const ui = {
     'sponsorship.tagline': '지금 후원사로 등록하세요',
     'sponsorship.desc': 'UbuCon Korea 2023에 후원하고, 우분투 커뮤니티에서의 후원사 브랜딩을 강화하거나, 새로운 동료를 채용하세요.',
     'sponsorship.details': '후원사 등록하기',
-    'noticeBanner.seeMore': '더 보기…'
+    'noticeBanner.moreArticle': '더 보기',
+    'navigation.about': '소개',
+    'navigation.sponsor': '후원사/개인 후원',
+    'navigation.program': '프로그램',
+    'navigation.callForProposals': '발표 제안'
   },
   en: {
     'eventMeta.date': '9th September 2023',
@@ -31,7 +35,11 @@ export const ui = {
     'sponsorship.tagline': 'Become a sponsor today',
     'sponsorship.desc': 'Sponsor UbuCon Korea 2023 to empower your branding in Ubuntu Community and hire new people.', 
     'sponsorship.details': 'Become a sponsor',
-    'noticeBanner.seeMore': 'See More…'
+    'noticeBanner.moreArticle': 'More Article',
+    'navigation.about': 'about',
+    'navigation.sponsor': 'Sponsors/Patrons',
+    'navigation.program': 'Program',
+    'navigation.callForProposals': 'Call for proposals'
   },
 
 } as const;
