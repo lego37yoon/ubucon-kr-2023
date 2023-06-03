@@ -7,9 +7,6 @@ export default function DiscourseNoticeBanner(props) {
     const [ topicList, setTopicList ] = useState([]);
     const [ moreTopic, setMoreTopic ] = useState([]);
     const t = useTranslations(props.language);
-    const moreButtonStyle = {
-        textAlign: "end"
-    }
 
     useEffect(() => {
         fetch(`${props.baseUrl}${props.jsonFeedEndpoint}`)
@@ -33,7 +30,7 @@ export default function DiscourseNoticeBanner(props) {
         <Strip>
             <Row>
                 {topicList && topicList.map(item => (
-                    <Col size={4}>
+                    <Col size={4} className={"p-divider__block"}>
                         <a href={item.url}>
                             <h3>{item.title}</h3>
                         </a>
@@ -42,7 +39,7 @@ export default function DiscourseNoticeBanner(props) {
                 ))}
             </Row>
             <Row>
-                <Col size={2} emptyLarge={11} emptySmall={1} style={moreButtonStyle}>
+                <Col size={2} emptyLarge={11} className={"u-align-text--right"}>
                     <Button
                         appearance=""
                         element={"a"}
