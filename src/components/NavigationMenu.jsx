@@ -14,7 +14,7 @@ export default function NavigationMenu(props) {
 					items: [
 						{
 							label: `${t('navigation.callForProposals')}`,
-							url: "call-for-proposals"
+							url: "/cfp"
 						}
 					],
 					label: `${t('navigation.program')}`
