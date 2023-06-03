@@ -7,7 +7,10 @@ export default function DiscourseNoticeBanner(props) {
     const [ topicList, setTopicList ] = useState([]);
     const [ moreTopic, setMoreTopic ] = useState([]);
     const t = useTranslations(props.language);
-    
+    const moreButtonStyle = {
+        textAlign: "end"
+    }
+
     useEffect(() => {
         fetch(`${props.baseUrl}${props.jsonFeedEndpoint}`)
             .then(res => res.json()).then(data => {
@@ -39,8 +42,7 @@ export default function DiscourseNoticeBanner(props) {
                 ))}
             </Row>
             <Row>
-                <Col size={10}></Col>
-                <Col size={2}>
+                <Col size={2} emptyLarge={11} emptySmall={1} style={moreButtonStyle}>
                     <Button
                         appearance=""
                         element={"a"}
