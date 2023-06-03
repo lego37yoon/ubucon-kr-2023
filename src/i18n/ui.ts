@@ -30,7 +30,6 @@ export const ui = {
     'eventMeta.theme': 'Ubuntu for Developer Productivity',
     'eventMeta.venue': 'Microsoft Korea',
     'eventMeta.venueDisclaimer': '*Venue may subject to change',
-    'eventMeta.callForProposals': 'Submit proposal',
     'intro.uca23': "Following last year's UbuCon Asia, UbuCon Korea will be held.",
     'intro.uca23desc': 'Coming this fall in Seoul. More information will be on this website soon. Login to our forum and enable notification to get notified for updates.',
     'intro.visitForum':'Visit Ubuntu Korea Community Forum',
@@ -41,7 +40,10 @@ export const ui = {
     'navigation.about': 'about',
     'navigation.sponsor': 'Sponsors/Patrons',
     'navigation.program': 'Program',
-    'navigation.callForProposals': 'Call for proposals'
+    'navigation.callForProposals': 'Call for proposals',
+    'cfp.title': 'Call for proposals',
+    'cfp.desc': 'If you have any experience on boosting your developer productivity using Ubuntu, or have your own unique experience around Ubuntu and FOSS to share, Submit your proposal today and become a speaker!',
+    'cfp.submit': 'Submit proposal'
   },
 
 } as const;

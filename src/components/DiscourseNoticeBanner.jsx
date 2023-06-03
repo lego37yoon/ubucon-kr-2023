@@ -21,7 +21,7 @@ export default function DiscourseNoticeBanner(props) {
                             date: new Date(item["last_posted_at"]).toLocaleString(),
                             url: `${props.baseUrl}/t/${item["slug"]}/${item["id"]}`,
                         };
-                    });
+                    }).slice(0, 3);
                 setTopicList(filteredTopics);
                 setMoreTopic(`${props.baseUrl}${data["topic_list"]["more_topics_url"]}`);
             })

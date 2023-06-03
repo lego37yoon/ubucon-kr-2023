@@ -35,7 +35,7 @@ export function getStaticPaths() {
 	</Strip>
 	<DiscourseNoticeBanner
 		baseUrl="https://discourse.ubuntu-kr.org"
-		jsonFeedEndpoint="/c/notice/9.json"
+		jsonFeedEndpoint="/c/notice/9.json?order=created"
 		topicTag="ubucon-kr-2023"
 		language={lang}
 		client:only="react"
@@ -49,19 +49,19 @@ export function getStaticPaths() {
 				<div class="row--50-50">
 					<div class="col">
 						<h2>
-							{t("intro.uca23")}
+							{t("cfp.title")}
 						</h2>
 					</div>
 					<div class="col">
 						<p>
-							{t("intro.uca23desc")}
+							{t("cfp.desc")}
 						</p>
 						<Button
 							appearance=""
 							element={"a"}
-							href="https://discourse.ubuntu-kr.org"
+							href="/cfp"
 						>
-							{t("intro.visitForum")}
+							{t("cfp.submit")}
 						</Button>
 					</div>
 				</div>
