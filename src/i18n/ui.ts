@@ -26,6 +26,7 @@ export const ui = {
     'navigation.about': '소개',
     'navigation.sponsor': '후원사/개인 후원',
     'navigation.program': '프로그램',
+    'navigation.session': '세션',
     'navigation.callForProposals': '발표 제안'
   },
   en: {
@@ -39,14 +40,15 @@ export const ui = {
     'sponsorship.tagline': 'Become a sponsor today',
     'sponsorship.desc': 'Sponsor UbuCon Korea 2023 to empower your branding in Ubuntu Community and hire new people.', 
     'sponsorship.details': 'Become a sponsor',
+    'cfp.title': 'Call for proposals',
+    'cfp.desc': 'If you have any experience on boosting your developer productivity using Ubuntu, or have your own unique experience around Ubuntu and FOSS to share, Submit your proposal today and become a speaker!',
+    'cfp.submit': 'Submit proposal',
     'noticeBanner.moreArticle': 'More Article',
     'navigation.about': 'about',
     'navigation.sponsor': 'Sponsors/Patrons',
     'navigation.program': 'Program',
-    'navigation.callForProposals': 'Call for proposals',
-    'cfp.title': 'Call for proposals',
-    'cfp.desc': 'If you have any experience on boosting your developer productivity using Ubuntu, or have your own unique experience around Ubuntu and FOSS to share, Submit your proposal today and become a speaker!',
-    'cfp.submit': 'Submit proposal'
+    'navigation.session': 'Sessions',
+    'navigation.callForProposals': 'Call for proposals'    
   },
 
 } as const;
