@@ -30,7 +30,7 @@ export default function DiscourseNoticeBanner(props) {
         <Strip>
             <Row>
                 {topicList && topicList.map(item => (
-                    <Col size={4} className={"p-divider__block"}>
+                    <Col size={4} className={"p-divider__block"} key={item.url}>
                         <a href={item.url}>
                             <h3>{item.title}</h3>
                         </a>
@@ -39,7 +39,7 @@ export default function DiscourseNoticeBanner(props) {
                 ))}
             </Row>
             <Row>
-                <Col size={2} emptyLarge={11} className={"u-align-text--right"}>
+                <Col size={12} className={"u-align-text--right"}>
                     <Button
                         appearance=""
                         element={"a"}
