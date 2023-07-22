@@ -24,7 +24,7 @@ jobs:
         run: | 
           curl -o src/data/sessions.json https://events.canonical.com/export/event/32.json?detail=contributions&occ=yes
           echo "Download Completed"
-          ls -la src/data
+          ls -la
       - name: Install, build, and upload your site
         uses: withastro/action@v0
         # with:
